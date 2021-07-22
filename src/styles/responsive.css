@@ -1,0 +1,74 @@
+@media screen and (min-width: 650px) {
+    .list__menu .cards__menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 690px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .restaurant__review {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .restaurant__review {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .restaurant__review {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .restaurant__review {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        right: -90%;
+        background-color: #0a0a0a;
+        width: 80%;
+        top: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.3s;
+        position: fixed;
+        z-index: -1;
+    }
+
+    nav ul.open {
+        right: 0;
+        transform: translateX(0);
+    }
+}
